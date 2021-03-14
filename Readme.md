@@ -18,7 +18,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -147,18 +146,6 @@ Project Link: [https://github.com/Pingoin/stellarium-socket](https://github.com/
 
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -170,5 +157,5 @@ Project Link: [https://github.com/Pingoin/stellarium-socket](https://github.com/
 [stars-url]: https://github.com/Pingoin/stellarium-socket/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Pingoin/stellarium-socket.svg?style=for-the-badge
 [issues-url]: https://github.com/Pingoin/stellarium-socket/issues
-[license-shield]: https://img.shields.io/github/license/Pingoin/stellarium-socket.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Pingoin/stellarium-socket?style=for-the-badge
 [license-url]: https://github.com/Pingoin/stellarium-socket/blob/master/LICENSE.txt

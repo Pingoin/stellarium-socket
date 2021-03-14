@@ -1,0 +1,17 @@
+{
+    "watch": [
+        "src",
+        "com"
+    ],
+    "ext": "ts,ejs,js",
+    "ignore": [
+        "**/*.test.ts",
+        "**/*.spec.ts",
+        ".git",
+        "node_modules"
+    ],
+    "execMap": {
+        "ts": "ts-node"
+    },
+    "exec": "npm-run-all build start"
+}

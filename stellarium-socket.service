@@ -1,0 +1,13 @@
+# copy this file to /lib/systemd/system/
+
+[Unit]
+Description=Socket translation for stellarium
+After=network-online.target
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/opt/stellarium-socket/dist/
+ExecStart=/usr/bin/node /opt/stellarium-socket/dist/index.js
+
+[Install]
+WantedBy=multi-user.target

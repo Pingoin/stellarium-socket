@@ -1,4 +1,4 @@
-#stellarium-socket
+# stellarium-socket
 
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]

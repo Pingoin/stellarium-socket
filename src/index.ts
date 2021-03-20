@@ -1,7 +1,8 @@
 /** @format */
 import * as net from "net";
-import http from "http";
+import https from "https";
 import * as WebSocket from "ws";
+import fs from "fs";
 
 interface EquatorialPosition {
   rightAscension: number;
@@ -11,7 +12,7 @@ export class Driver {
   private server: net.Server;
   private socket: net.Socket | null = null;
 
-  private httpServer: http.Server;
+  private httpServer: https.Server;
   private wss: WebSocket.Server;
   private sollPosition: EquatorialPosition = {
     rightAscension: 0,
@@ -19,8 +20,12 @@ export class Driver {
   };
 
   constructor(port: number, httpPort: number) {
+    const options = {
+      key: fs.readFileSync('key.pem'),
+      cert: fs.readFileSync('cert.pem')
+    };
     this.server = new net.Server();
-    this.httpServer = http.createServer();
+    this.httpServer = https.createServer(options);
     this.wss = new WebSocket.Server({ server: this.httpServer });
 
     this.wss.on("connection", (ws: WebSocket) => {
